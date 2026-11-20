@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> SPORTS JAD| Conjuntos Deportivos para Hombre</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#inicio" class="logo" aria-label="Sports JAD, inicio">
+        <img src="sports-jad-logo.png" alt="Sports JAD, conjuntos deportivos">
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="#inicio">Inicio</a>
+        <a href="#productos">Productos</a>
+        <a href="#ofertas">Ofertas</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <div class="header__actions">
+        
+        <button class="cart-btn" id="cartBtn" aria-label="Abrir carrito">
+          <img src="icons/shopping-cart.svg" alt="" width="24" height="24" style="display:inline-block; vertical-align:middle;"> <span class="cart-count" id="cartCount">0</span>
+        </button>
+        
+        <button class="menu-btn" id="menuBtn" aria-label="Menú">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+    <section class="hero" id="inicio">
+      <div class="container hero__content">
+        <p class="hero__tag">NUEVA COLECCIÓN 2026</p>
+        <h1>Rinde al Máximo <br><span>con Estilo</span></h1>
+        <p class="hero__text">Conjuntos deportivos diseñados para entrenar, correr y lucir increíble.</p>
+        <a href="#productos" class="btn btn--primary">Ver Colección</a>
+      </div>
+    </section>
+
+    
+    <section class="benefits" id="ofertas">
+      <div class="container benefits__grid">
+        <div class="benefit"><span><img src="icons/delivery.svg" alt="" width="40" height="40" style="display:inline-block; vertical-align:middle;"></span><h3>Envíos gratis</h3><p>En compras superiores a $150.000</p></div>
+        <div class="benefit"><span><img src="icons/secure-payment.svg" alt="" width="40" height="40" style="display:inline-block; vertical-align:middle;"></span><h3>Pagos seguros</h3><p>Protegemos todas tus transacciones</p></div>
+        <div class="benefit"><span><img src="icons/quality.svg" alt="" width="40" height="40" style="display:inline-block; vertical-align:middle;"></span><h3>Calidad garantizada</h3><p>Telas premium y costuras reforzadas</p></div>
+      </div>
+    </section>
+
+  
+    <section class="products" id="productos">
+      <div class="container">
+        <h2 class="section-title">Nuestros <span>Conjuntos</span></h2>
+        <!-- Las tarjetas se generan desde script.js -->
+        <div class="products__grid" id="productsGrid"></div>
+      </div>
+    </section>
+  </main>
+
+  
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart" id="cart" aria-label="Carrito de compras">
+    <div class="cart__header">
+      <h3>Tu carrito</h3>
+      <button class="cart__close" id="cartClose" aria-label="Cerrar">✕</button>
+    </div>
+    <div class="cart__items" id="cartItems"></div>
+    <div class="cart__footer">
+      <div class="cart__total"><span>Total:</span><strong id="cartTotal">$0</strong></div>
+      <button class="btn btn--primary btn--full" id="checkoutBtn">Finalizar compra</button>
+      <button class="btn btn--ghost btn--full" id="clearBtn">Vaciar carrito</button>
+    </div>
+  </aside>
+
+
+  <footer class="footer" id="contacto">
+    <div class="container footer__grid">
+      <div>
+        <a href="#inicio" class="logo" aria-label="Sports JAD, inicio">
+          <img src="sports-jad-logo.png" alt="Sports JAD, conjuntos deportivos">
+        </a>
+        <p>Ropa deportiva para quienes no se detienen.</p>
+      </div>
+      <div>
+        <h4>Síguenos</h4>
+        <p class="footer__links"><a href="#">Instagram</a> · <a href="#">Facebook</a> · <a href="#">TikTok</a></p>
+      </div>
+      <div>
+        <h4>Métodos de pago</h4>
+        <p><img src="icons/payment-card.svg" alt="" width="16" height="16" style="display:inline-block; vertical-align:middle;"> Visa · Mastercard · PSE · Nequi</p>
+      </div>
+    </div>
+    <p class="footer__copy">© 2026 SPORTS JAD. Todos los derechos reservados por las bestias.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
